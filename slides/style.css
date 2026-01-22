@@ -1,0 +1,244 @@
+/* Pandoro Brand Styles for Slidev */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Spectral:wght@400;500;600;700&display=swap');
+
+/* CSS Custom Properties - Pandoro Color Palette */
+:root {
+  /* Primary Colors */
+  --pandoro-pan: #EBBC6C;
+  --pandoro-crust: #3D3020;
+
+  /* Neutral Colors */
+  --pandoro-bright: #FBEEDA;
+  --pandoro-light: #F8E7CA;
+  --pandoro-toast: #FFE1AA;
+  --pandoro-shade: #958A78;
+  --pandoro-dark: #332E26;
+
+  /* Slidev Theme Overrides */
+  --slidev-theme-primary: var(--pandoro-pan);
+  --slidev-theme-accent: var(--pandoro-crust);
+}
+
+/* Base Typography */
+.slidev-layout {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Headers - Spectral for H1 and H2 */
+h1, .slidev-layout h1 {
+  font-family: 'Spectral', Georgia, serif;
+  font-weight: 600;
+  color: var(--pandoro-crust);
+}
+
+h2, .slidev-layout h2 {
+  font-family: 'Spectral', Georgia, serif;
+  font-weight: 500;
+  color: var(--pandoro-dark);
+}
+
+/* H3, H4 - Inter */
+h3, h4, .slidev-layout h3, .slidev-layout h4 {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  color: var(--pandoro-crust);
+}
+
+/* Body text */
+p, li, .slidev-layout p, .slidev-layout li {
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  color: var(--pandoro-dark);
+}
+
+/* Links */
+a {
+  color: var(--pandoro-crust);
+  text-decoration: underline;
+  text-decoration-color: var(--pandoro-pan);
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--pandoro-pan);
+}
+
+/* Code blocks */
+.slidev-code {
+  background-color: var(--pandoro-dark) !important;
+}
+
+pre, code {
+  font-family: 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+/* Tables */
+table {
+  border-color: var(--pandoro-shade);
+}
+
+th {
+  background-color: var(--pandoro-crust);
+  color: var(--pandoro-bright);
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+}
+
+td {
+  border-color: var(--pandoro-shade);
+}
+
+tr:nth-child(even) {
+  background-color: var(--pandoro-bright);
+}
+
+/* Slide backgrounds - custom classes */
+.bg-pan {
+  background-color: var(--pandoro-pan) !important;
+}
+
+.bg-crust {
+  background-color: var(--pandoro-crust) !important;
+  color: var(--pandoro-bright) !important;
+}
+
+.bg-crust h1, .bg-crust h2, .bg-crust h3, .bg-crust h4,
+.bg-crust p, .bg-crust li {
+  color: var(--pandoro-bright) !important;
+}
+
+.bg-bright {
+  background-color: var(--pandoro-bright) !important;
+}
+
+.bg-light {
+  background-color: var(--pandoro-light) !important;
+}
+
+.bg-toast {
+  background-color: var(--pandoro-toast) !important;
+}
+
+.bg-dark {
+  background-color: var(--pandoro-dark) !important;
+  color: var(--pandoro-bright) !important;
+}
+
+.bg-dark h1, .bg-dark h2, .bg-dark h3, .bg-dark h4,
+.bg-dark p, .bg-dark li {
+  color: var(--pandoro-bright) !important;
+}
+
+/* Text color utilities */
+.text-pan {
+  color: var(--pandoro-pan) !important;
+}
+
+.text-crust {
+  color: var(--pandoro-crust) !important;
+}
+
+.text-bright {
+  color: var(--pandoro-bright) !important;
+}
+
+.text-shade {
+  color: var(--pandoro-shade) !important;
+}
+
+.text-dark {
+  color: var(--pandoro-dark) !important;
+}
+
+/* Button styles */
+a.btn-pan,
+a.btn-crust,
+.btn-pan,
+.btn-crust {
+  text-decoration: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+.btn-pan {
+  background-color: var(--pandoro-pan) !important;
+  color: var(--pandoro-crust) !important;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  display: inline-block;
+}
+
+.btn-crust {
+  background-color: var(--pandoro-crust) !important;
+  color: var(--pandoro-bright) !important;
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  display: inline-block;
+}
+
+/* Card/Box styles */
+.card-pan {
+  background-color: rgba(235, 188, 108, 0.15);
+  border: 1px solid var(--pandoro-pan);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.card-crust {
+  background-color: var(--pandoro-crust);
+  color: var(--pandoro-bright);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.card-light {
+  background-color: var(--pandoro-light);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+/* Mermaid diagram overrides */
+.mermaid {
+  --mermaid-theme-primary-color: var(--pandoro-pan);
+  --mermaid-theme-primary-text-color: var(--pandoro-crust);
+  --mermaid-theme-secondary-color: var(--pandoro-light);
+}
+
+/* Default slide styling */
+.slidev-page {
+  background-color: var(--pandoro-bright);
+}
+
+/* Strong/bold text */
+strong, b {
+  color: var(--pandoro-crust);
+  font-weight: 600;
+}
+
+/* Bold text in table headers should stay bright */
+th strong, th b {
+  color: var(--pandoro-bright);
+}
+
+/* Bold text on dark backgrounds should stay bright */
+.bg-dark strong, .bg-dark b {
+  color: var(--pandoro-pan);
+}
+
+/* List markers */
+ul > li::marker {
+  color: var(--pandoro-pan);
+}
+
+ol > li::marker {
+  color: var(--pandoro-pan);
+  font-weight: 600;
+}

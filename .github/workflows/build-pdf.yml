@@ -1,0 +1,45 @@
+name: Build PDF
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'slides/**'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'slides/**'
+  workflow_dispatch:
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: slides/package-lock.json
+
+      - name: Install dependencies
+        working-directory: slides
+        run: npm ci
+
+      - name: Install Playwright browsers
+        working-directory: slides
+        run: npx playwright install chromium
+
+      - name: Build PDF
+        working-directory: slides
+        run: npm run export-pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: slides-pdf
+          path: slides/slides-export.pdf
