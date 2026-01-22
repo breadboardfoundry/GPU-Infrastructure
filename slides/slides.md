@@ -40,6 +40,26 @@ fonts:
 </div>
 
 ---
+class: bg-bright
+---
+
+# Enterprise GPU Infrastructure
+
+<div class="grid grid-cols-2 gap-8 pt-2">
+  <div>
+    <img src="/h100-server-rack.png" class="rounded-lg shadow-lg w-full object-contain" />
+    <ul class="pt-3 text-dark text-sm list-disc pl-4">
+      <li><strong>NVIDIA DGX H100</strong>: $200,000 - $300,000+</li>
+      <li><strong>Power draw</strong>: 10kW per system</li>
+      <li><strong>Cooling</strong>: Specialized data center required</li>
+    </ul>
+  </div>
+  <div class="flex items-center justify-center">
+    <img src="/nvidia-dgx-h100-angle4.jpg" class="rounded-lg shadow-lg w-full max-h-96 object-contain" />
+  </div>
+</div>
+
+---
 layout: two-cols
 class: bg-light
 ---
