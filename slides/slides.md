@@ -4,34 +4,44 @@ title: Pandoro - Sustainable GPU Infrastructure
 info: |
   ## Pandoro
   GPU Infrastructure for ML Research Teams
-  
+
   Sustainable AI presentation by Keenan Johnson
-class: text-center
+class: text-center bg-pan
+colorSchema: light
 highlighter: shiki
 drawings:
   persist: false
 transition: slide-left
 mdc: true
+fonts:
+  sans: 'Inter'
+  serif: 'Spectral'
+  mono: 'Fira Code'
 ---
+
+<style>
+@import './style.css';
+</style>
 
 # Pandoro
 
 ## GPU Infrastructure for ML Research Teams
 
 <div class="pt-12">
-  <span class="px-2 py-1 rounded text-sm" style="background-color: #10b981; color: white;">
-    🌱 Powered by Clean Energy
+  <span class="px-2 py-1 rounded text-sm btn-crust">
+    Powered by Clean Energy
   </span>
 </div>
 
 <div class="abs-br m-6 flex gap-2">
-  <a href="https://pandoro.today" target="_blank" class="text-sm opacity-50 hover:opacity-100">
+  <a href="https://pandoro.today" target="_blank" class="text-sm text-crust opacity-70 hover:opacity-100">
     pandoro.today
   </a>
 </div>
 
 ---
 layout: two-cols
+class: bg-light
 ---
 
 # The Problem
@@ -49,22 +59,28 @@ Research teams conducting ML experiments face an impossible situation:
 
 ::right::
 
-<div class="pl-8 pt-12">
+<div class="pl-8 pt-8">
 
-```text
-What you need:
-✓ GPUs
-✓ High RAM  
-✓ Substantial storage
+<div class="card-pan p-6 text-dark">
 
-What's unclear:
-✗ How to access it affordably
-✗ How to avoid queue delays
-✗ How to ensure reproducibility
-```
+**What you need:**
+
+- GPUs
+- High RAM
+- Substantial storage
+
+**What's unclear:**
+
+- How to access it affordably
+- How to avoid queue delays
+- How to ensure reproducibility
 
 </div>
 
+</div>
+
+---
+class: bg-dark
 ---
 
 # The Four Barriers Researchers Face
@@ -73,7 +89,7 @@ What's unclear:
 
 <div v-click>
 
-### 💰 Financial Barriers
+### Financial Barriers
 - Usage-based pricing creates unpredictable costs
 - Hidden data transfer and storage fees
 - Hardware purchases hard to justify early-stage
@@ -82,7 +98,7 @@ What's unclear:
 
 <div v-click>
 
-### 🏛️ Institutional Barriers
+### Institutional Barriers
 - IT approval processes delay acquisition
 - Multi-week queue delays for shared resources
 - Mandated environments vs. research needs
@@ -91,7 +107,7 @@ What's unclear:
 
 <div v-click>
 
-### 🔬 Reproducibility Barriers
+### Reproducibility Barriers
 - Cloud providers hide hardware specs
 - Results can't be validated without environment info
 - Inconsistent hardware across institutions
@@ -100,7 +116,7 @@ What's unclear:
 
 <div v-click>
 
-### ⚙️ Operational Barriers
+### Operational Barriers
 - Vendor lock-in with proprietary configs
 - Data transfer fees block migration
 - No clear path to scale
@@ -111,41 +127,43 @@ What's unclear:
 
 ---
 layout: center
-class: text-center
+class: text-center bg-bright
 ---
 
 # Our Solution
 
-<div class="text-2xl pt-4 pb-8">
-Dedicated consumer GPU systems at <span style="color: #10b981;">fixed monthly pricing</span><br/>
-with <span style="color: #3b82f6;">complete hardware transparency</span>
+<div class="text-2xl pt-4 pb-8 text-dark">
+Dedicated consumer GPU systems at <span class="text-crust font-semibold">fixed monthly pricing</span><br/>
+with <span class="text-crust font-semibold">complete hardware transparency</span>
 </div>
 
 <div class="grid grid-cols-3 gap-4 text-left">
 
-<div class="p-4 rounded-lg" style="background-color: rgba(16, 185, 129, 0.1);">
+<div class="card-pan">
 
-### 🖥️ Dedicated Access
+### Dedicated Access
 No shared queues, no IT approval, immediate access
 
 </div>
 
-<div class="p-4 rounded-lg" style="background-color: rgba(59, 130, 246, 0.1);">
+<div class="card-pan">
 
-### 📋 Full Transparency
+### Full Transparency
 Complete specs disclosed for reproducible research
 
 </div>
 
-<div class="p-4 rounded-lg" style="background-color: rgba(139, 92, 246, 0.1);">
+<div class="card-pan">
 
-### 💵 Fixed Pricing
+### Fixed Pricing
 Run unlimited experiments without tracking usage
 
 </div>
 
 </div>
 
+---
+class: bg-dark
 ---
 
 # Why This Approach Works
@@ -167,6 +185,8 @@ Hyperscalers abstract hardware behind instance types and virtualization layers. 
 </v-clicks>
 
 ---
+class: bg-light
+---
 
 # Clean Energy Computing
 
@@ -174,7 +194,7 @@ Hyperscalers abstract hardware behind instance types and virtualization layers. 
 
 <div>
 
-## 🌲 Pacific Northwest Renewable Energy
+## Pacific Northwest Renewable Energy
 
 Our infrastructure runs on Washington state's electrical grid, one of the cleanest in the United States.
 
@@ -190,7 +210,7 @@ Our infrastructure runs on Washington state's electrical grid, one of the cleane
 
 <div class="flex items-center justify-center">
 
-```mermaid
+```mermaid {theme: 'base', themeVariables: {primaryColor: '#EBBC6C', primaryTextColor: '#3D3020', secondaryColor: '#F8E7CA', tertiaryColor: '#FFE1AA'}}
 pie title WA State Energy Mix
     "Hydroelectric" : 68
     "Wind" : 8
@@ -203,6 +223,8 @@ pie title WA State Energy Mix
 
 </div>
 
+---
+class: bg-bright
 ---
 
 # How Pandoro Compares
@@ -217,18 +239,19 @@ pie title WA State Energy Mix
 
 ---
 layout: two-cols
+class: bg-dark
 ---
 
 # Who We Support
 
 <v-clicks>
 
-### 🔬 Domain Scientists
+### Domain Scientists
 - Visual imaging ML projects
 - Teams without ML engineering backgrounds
 - Need hardware transparency for publishable results
 
-### 🤖 Robotics Teams
+### Robotics Teams
 - Computer vision experiments
 - Sensor fusion and autonomous systems
 - Need reliable compute without cloud unpredictability
@@ -254,24 +277,24 @@ layout: two-cols
 
 ---
 layout: center
-class: text-center
+class: text-center bg-bright
 ---
 
 # Onsite Migration Path
 
-<div class="text-xl pt-4 pb-8 opacity-70">
+<div class="text-xl pt-4 pb-8 text-shade">
 Consumer-grade GPU systems enable easy transition to in-house infrastructure
 </div>
 
-```mermaid
+```mermaid {theme: 'base', themeVariables: {primaryColor: '#EBBC6C', primaryTextColor: '#3D3020', lineColor: '#958A78'}}
 flowchart LR
     A[Start with Pandoro] --> B[Validate methodology]
     B --> C[Scale experiments]
     C --> D[Purchase same components]
     D --> E[Deploy locally]
-    
-    style A fill:#10b981,color:#fff
-    style E fill:#3b82f6,color:#fff
+
+    style A fill:#EBBC6C,color:#3D3020
+    style E fill:#3D3020,color:#FBEEDA
 ```
 
 <div class="pt-4">
@@ -282,6 +305,8 @@ flowchart LR
 </v-click>
 </div>
 
+---
+class: bg-light
 ---
 
 # About Bread Board Foundry
@@ -296,7 +321,7 @@ Pandoro is developed by **Bread Board Foundry** — we build specialized tools f
 
 ### Our Products
 - **Pretzel** — Manufacturing optimization for hardware teams
-- **Soufflé** — Goal-based planning for hardware leaders  
+- **Souffle** — Goal-based planning for hardware leaders
 - **Pandoro** — GPU compute for ML research
 
 </v-clicks>
@@ -305,12 +330,12 @@ Pandoro is developed by **Bread Board Foundry** — we build specialized tools f
 
 <div class="flex flex-col justify-center items-center">
 
-<div class="text-6xl pb-4">🍞</div>
+<div class="text-4xl pb-4 text-crust font-bold" style="font-family: Spectral, serif;">BBF</div>
 
 *"Forging Software That Speaks Hardware"*
 
 <div class="pt-4">
-  <a href="https://breadboardfoundry.com" target="_blank">breadboardfoundry.com</a>
+  <a href="https://breadboardfoundry.com" target="_blank" class="btn-crust">breadboardfoundry.com</a>
 </div>
 
 </div>
@@ -319,7 +344,7 @@ Pandoro is developed by **Bread Board Foundry** — we build specialized tools f
 
 ---
 layout: center
-class: text-center
+class: text-center bg-pan
 ---
 
 # Let's Connect
@@ -333,8 +358,8 @@ class: text-center
 Discuss your research needs, timeline constraints, and budget considerations.
 
 <div class="pt-4">
-  <a href="https://calendly.com/breadboardfoundry/pandoro" target="_blank" class="px-4 py-2 rounded" style="background-color: #10b981; color: white;">
-    calendly.com/breadboardfoundry/pandoro
+  <a href="https://calendly.com/breadboardfoundry/pandoro" target="_blank" class="btn-crust">
+    Book a Call
   </a>
 </div>
 
@@ -347,7 +372,7 @@ Discuss your research needs, timeline constraints, and budget considerations.
 Full hardware details, pricing structure, and technical specifications.
 
 <div class="pt-4">
-  <a href="https://pandoro.today" target="_blank" class="px-4 py-2 rounded" style="background-color: #3b82f6; color: white;">
+  <a href="https://pandoro.today" target="_blank" class="btn-crust">
     pandoro.today
   </a>
 </div>
@@ -356,22 +381,22 @@ Full hardware details, pricing structure, and technical specifications.
 
 </div>
 
-<div class="pt-12 opacity-50">
+<div class="pt-12 text-crust opacity-70">
 
-Keenan Johnson • Bread Board Foundry • hello@breadboardfoundry.com
+Keenan Johnson | Bread Board Foundry | hello@breadboardfoundry.com
 
 </div>
 
 ---
 layout: center
-class: text-center
+class: text-center bg-crust
 ---
 
 # Questions?
 
-<div class="text-6xl pt-8">🙋‍♀️ 🙋 🙋‍♂️</div>
+<div class="text-4xl pt-8 text-pan">?</div>
 
-<div class="pt-8 opacity-70">
+<div class="pt-8 text-bright opacity-80">
 
 Thank you to Pascal Joly and the Sustainable AI community!
 
