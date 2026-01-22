@@ -166,7 +166,7 @@ Dedicated consumer GPU systems at <span class="text-crust font-semibold">fixed m
 with <span class="text-crust font-semibold">complete hardware transparency</span>
 </div>
 
-<div class="grid grid-cols-3 gap-4 text-left">
+<div class="grid grid-cols-2 gap-4 text-left">
 
 <div class="card-pan">
 
@@ -186,6 +186,13 @@ Complete specs disclosed for reproducible research
 
 ### Fixed Pricing
 Run unlimited experiments without tracking usage
+
+</div>
+
+<div class="card-pan">
+
+### Clean Energy
+Powered by Seattle's ~90% renewable grid
 
 </div>
 
@@ -237,16 +244,11 @@ Our infrastructure runs on Washington state's electrical grid, one of the cleane
 
 </div>
 
-<div class="flex items-center justify-center">
+<div class="flex flex-col items-center justify-center">
 
-```mermaid {theme: 'base', themeVariables: {primaryColor: '#EBBC6C', primaryTextColor: '#3D3020', secondaryColor: '#F8E7CA', tertiaryColor: '#FFE1AA'}}
-pie title WA State Energy Mix
-    "Hydroelectric" : 68
-    "Wind" : 8
-    "Nuclear" : 8
-    "Natural Gas" : 12
-    "Other Renewables" : 4
-```
+<img src="/PowerMixSeattle.png" class="rounded-lg shadow-lg max-h-72 object-contain" />
+
+<a href="https://www.seattle.gov/city-light/energy/power-supply-and-delivery" target="_blank" class="text-xs opacity-60 pt-2">Source: Seattle City Light</a>
 
 </div>
 
