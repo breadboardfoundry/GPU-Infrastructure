@@ -159,7 +159,7 @@ layout: center
 class: text-center bg-bright
 ---
 
-# Our Solution
+# Pandoro: The Solution
 
 <div class="text-2xl pt-4 pb-8 text-dark">
 Dedicated consumer GPU systems at <span class="text-crust font-semibold">fixed monthly pricing</span><br/>
