@@ -218,6 +218,11 @@ th strong, th b {
   color: var(--pandoro-bright);
 }
 
+/* Bold text on dark backgrounds should stay bright */
+.bg-dark strong, .bg-dark b {
+  color: var(--pandoro-pan);
+}
+
 /* List markers */
 ul > li::marker {
   color: var(--pandoro-pan);
