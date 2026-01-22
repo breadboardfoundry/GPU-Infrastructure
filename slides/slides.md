@@ -61,7 +61,7 @@ class: bg-bright
 
 ---
 layout: two-cols
-class: bg-light
+class: bg-bright
 ---
 
 # The Problem
@@ -70,6 +70,7 @@ Research teams conducting ML experiments face an impossible situation:
 
 <v-clicks>
 
+- The upsides of Machine Learning for science are too good to be ignored
 - **Experiments that should take hours take months** without GPU acceleration
 - Navigating **financial uncertainty** with usage-based pricing
 - **Institutional red tape** and IT approval delays
@@ -79,9 +80,9 @@ Research teams conducting ML experiments face an impossible situation:
 
 ::right::
 
-<div class="pl-8 pt-8">
+<div class="pl-8 pt-8 bg-bright h-full">
 
-<div class="card-pan p-6 text-dark">
+<div class="p-6 text-dark">
 
 **What you need:**
 
