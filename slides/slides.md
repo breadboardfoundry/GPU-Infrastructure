@@ -269,44 +269,6 @@ class: bg-bright
 | **Migration Path** | Vendor lock-in | N/A | N/A | Easy onsite transition |
 
 ---
-layout: two-cols
-class: bg-dark
----
-
-# Who We Support
-
-<v-clicks>
-
-### Domain Scientists
-- Visual imaging ML projects
-- Teams without ML engineering backgrounds
-- Need hardware transparency for publishable results
-
-### Robotics Teams
-- Computer vision experiments
-- Sensor fusion and autonomous systems
-- Need reliable compute without cloud unpredictability
-
-</v-clicks>
-
-::right::
-
-<div class="pl-8 pt-16">
-
-## Common Constraints
-
-<v-clicks>
-
-- Small teams without capital for hardware
-- Institutional IT barriers
-- Need for reproducible environments
-- Must scale with project growth
-
-</v-clicks>
-
-</div>
-
----
 layout: center
 class: text-center bg-bright
 ---
@@ -317,11 +279,11 @@ class: text-center bg-bright
 Consumer-grade GPU systems enable easy transition to in-house infrastructure
 </div>
 
-```mermaid {theme: 'base', themeVariables: {primaryColor: '#EBBC6C', primaryTextColor: '#3D3020', lineColor: '#958A78'}}
+```mermaid {theme: 'base', scale: 0.75, themeVariables: {primaryColor: '#EBBC6C', primaryTextColor: '#3D3020', lineColor: '#958A78'}}
 flowchart LR
     A[Start with Pandoro] --> B[Validate methodology]
     B --> C[Scale experiments]
-    C --> D[Purchase same components]
+    C --> D[Purchase own hw]
     D --> E[Deploy locally]
 
     style A fill:#EBBC6C,color:#3D3020
