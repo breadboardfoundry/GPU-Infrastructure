@@ -344,60 +344,25 @@ Pandoro is developed by **Bread Board Foundry** — we build specialized tools f
 
 ---
 layout: center
-class: text-center bg-pan
----
-
-# Let's Connect
-
-<div class="grid grid-cols-2 gap-16 pt-8">
-
-<div>
-
-### Schedule a Call
-
-Discuss your research needs, timeline constraints, and budget considerations.
-
-<div class="pt-4">
-  <a href="https://calendly.com/breadboardfoundry/pandoro" target="_blank" class="btn-crust">
-    Book a Call
-  </a>
-</div>
-
-</div>
-
-<div>
-
-### Learn More
-
-Full hardware details, pricing structure, and technical specifications.
-
-<div class="pt-4">
-  <a href="https://pandoro.today" target="_blank" class="btn-crust">
-    pandoro.today
-  </a>
-</div>
-
-</div>
-
-</div>
-
-<div class="pt-12 text-crust opacity-70">
-
-Keenan Johnson | Bread Board Foundry | hello@breadboardfoundry.com
-
-</div>
-
----
-layout: center
 class: text-center bg-crust
 ---
 
 # Questions?
 
-<div class="text-4xl pt-8 text-pan">?</div>
+<div class="pt-8">
+
+Thanks for listening!
+
+<div class="pt-4">
+  <a href="https://pandoro.today" target="_blank" class="btn-pan">
+    pandoro.today
+  </a>
+</div>
+
+Full hardware details, pricing structure, and technical specifications.
+
+</div>
 
 <div class="pt-8 text-bright opacity-80">
-
-Thank you to Pascal Joly and the Sustainable AI community!
 
 </div>
