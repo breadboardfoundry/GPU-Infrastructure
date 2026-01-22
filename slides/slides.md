@@ -60,6 +60,14 @@ class: bg-bright
 </div>
 
 ---
+class: bg-bright
+---
+
+# Science
+
+<img src="/underwater-ml.png" class="rounded-lg shadow-lg w-full max-h-96 object-contain mx-auto" />
+
+---
 layout: two-cols
 class: bg-bright
 ---
