@@ -310,14 +310,13 @@ class: bg-light
 
 Pandoro is developed by **Bread Board Foundry** — we build specialized tools for teams working on meaningful, impactful projects.
 
-<v-clicks>
-
 ### Our Products
 - **Pretzel** — Manufacturing optimization for hardware teams
 - **Souffle** — Goal-based planning for hardware leaders
 - **Pandoro** — GPU compute for ML research
 
-</v-clicks>
+### Open Source
+- **[LOAF](https://github.com/PandoroML/LOAF)** — Open source hyperlocal weather forecasting using ML models and local hw
 
 </div>
 
