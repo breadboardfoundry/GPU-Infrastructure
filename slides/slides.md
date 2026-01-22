@@ -48,7 +48,7 @@ class: bg-bright
 <div class="grid grid-cols-2 gap-8 pt-2">
   <div>
     <img src="/h100-server-rack.png" class="rounded-lg shadow-lg w-full object-contain" />
-    <ul class="pt-3 text-dark text-sm list-disc pl-4">
+    <ul class="pt-3 text-dark text-lg list-disc pl-4">
       <li><strong>NVIDIA DGX H100</strong>: $200,000 - $300,000+</li>
       <li><strong>Power draw</strong>: 10kW per system</li>
       <li><strong>Cooling</strong>: Specialized data center required</li>
