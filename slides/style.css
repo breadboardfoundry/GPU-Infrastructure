@@ -213,6 +213,11 @@ strong, b {
   font-weight: 600;
 }
 
+/* Bold text in table headers should stay bright */
+th strong, th b {
+  color: var(--pandoro-bright);
+}
+
 /* List markers */
 ul > li::marker {
   color: var(--pandoro-pan);
